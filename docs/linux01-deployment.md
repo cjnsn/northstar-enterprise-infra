@@ -87,6 +87,11 @@ Completed the following checks:
 - ### System and Network Verification
 
 ![Linux01 system and network verification](../screenshots/linux01/linux01-system-network-verification.png)
+### Network Connectivity Verification
+
+Verified connectivity to the default gateway (10.10.10.1), external network access (8.8.8.8), and DNS resolution.
+
+![Linux01 network connectivity verification](../screenshots/linux01/linux01-network-connectivity.png)
 
 Example SSH authentication log:
 
