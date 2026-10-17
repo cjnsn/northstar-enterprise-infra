@@ -84,6 +84,9 @@ Completed the following checks:
 - Confirmed that the SSH service was active.
 - Confirmed no failed systemd services after updates.
 - Verified successful SSH public-key authentication in server logs.
+- ### System and Network Verification
+
+![Linux01 system and network verification](../screenshots/linux01/linux01-system-network-verification.png)
 
 Example SSH authentication log:
 
