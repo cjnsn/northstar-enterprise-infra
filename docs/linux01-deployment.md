@@ -98,6 +98,23 @@ Example SSH authentication log:
 ```text
 Accepted publickey for northstaradmin from 10.10.10.1 port 53266 ssh2
 ```
+### SSH Service Verification
+
+The SSH service is enabled and running, allowing administrators to remotely manage Linux01.
+
+![Linux01 SSH Service Status](../screenshots/linux01/linux01-ssh-service-status.png)
+
+### Firewall Verification
+
+The firewalld configuration permits SSH traffic while maintaining host-based firewall protection.
+
+![Linux01 Firewall Verification](../screenshots/linux01/linux01-firewall-verification.png)
+
+### SSH Public-Key Authentication
+
+SSH logs confirm successful public-key authentication for the northstaradmin account.
+
+![Linux01 SSH Key Authentication](../screenshots/linux01/linux01-ssh-key-authentication.png)
 
 ## 6. Security Considerations
 
