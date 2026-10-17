@@ -65,3 +65,10 @@ Technologies will be added as the project develops. The environment is expected 
 **Phase 1 — Architecture & Planning: In Progress**
 
 The initial network addressing strategy and infrastructure requirements are defined. The next phase will establish the virtual network and deploy the first Linux server.
+
+
+## Technical Documentation
+
+The following documents describe the implementation, troubleshooting, and validation of the NorthStar Solutions infrastructure.
+
+- [Linux01 — Rocky Linux Server Deployment and Secure Remote Administration](docs/linux01-deployment.md)
