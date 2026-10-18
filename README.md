@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-NorthStar Solutions is a simulated 50-user organization experiencing rapid growth and expecting to scale to approximately 100 employees within 18 months. Its existing IT environment relies on local user accounts, inconsistent permissions, manually configured Linux servers, shared credentials, and manual onboarding and offboarding processes.
+NorthStar Solutions is a simulated 50-user organization that's projected to grow to 100 users within one year. Its current IT environment relies on local user accounts, inconsistent permissions, manually configured Linux servers, shared credentials, and manual onboarding and offboarding processes.
 
-This project involves designing and implementing a Linux-focused enterprise infrastructure that addresses these limitations while improving security, manageability, reliability, and scalability.
+This project aims to design and implement infrastructure that addresses these limitations.
 
 ## Business Problems
 
@@ -43,7 +43,7 @@ The infrastructure will be designed to:
 | Infrastructure Range    | `10.10.10.1 - 10.10.10.19`    |
 | DHCP Pool               | `10.10.10.20 - 10.10.10.149`  |
 | Reserved/Future Use     | `10.10.10.150 - 10.10.10.254` |
-| Internal Domain         | `corp.northstarsolutions.com` |
+| Internal Domain         | `northstar.internal` |
 
 ## Planned Technologies
 
@@ -62,9 +62,28 @@ Technologies will be added as the project develops. The environment is expected 
 
 ## Project Status
 
-**Phase 1 — Architecture & Planning: In Progress**
 
-The initial network addressing strategy and infrastructure requirements are defined. The next phase will establish the virtual network and deploy the first Linux server.
+### Phase 1 — Core Linux Infrastructure (In Progress)
+
+**Completed:**
+- [x] Deployed Linux01 using Rocky Linux 9
+- [x] Configured static IP addressing and hostname
+- [x] Verified network connectivity and DNS resolution
+- [x] Applied operating system updates
+- [x] Configured and verified SSH public-key authentication
+- [x] Verified SSH service and firewall configuration
+- [x] Documented deployment, troubleshooting, and validation evidence
+
+**In Progress:**
+- [ ] Audit and harden SSH security settings
+
+**Planned:**
+- [ ] Deploy Linux02
+- [ ] Configure centralized administration
+- [ ] Implement infrastructure automation
+- [ ] Configure monitoring and logging
+- [ ] Implement and test backup and recovery procedures
+  
 
 
 ## Technical Documentation
