@@ -4,7 +4,7 @@
 
 NorthStar Solutions is a simulated 50-user organization that's projected to grow to 100 users within one year. Its current IT environment relies on local user accounts, inconsistent permissions, manually configured Linux servers, shared credentials, and manual onboarding and offboarding processes.
 
-This project aims to design and implement infrastructure that addresses these limitations.
+This is a long-term project aimed at designing and implementing infrastructure that addresses these limitations in phases.
 
 ## Business Problems
 
