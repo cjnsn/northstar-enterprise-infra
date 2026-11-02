@@ -86,4 +86,24 @@ Deploy a Windows 11 Pro virtual workstation, configure a local administrator acc
 
 ## Project Status
 
+## Deployment and Troubleshooting Evidence
+
+### 1. Windows System Information
+
+Verified the Windows 11 Pro edition, computer name, system architecture, processor, and installed memory.
+
+![Windows01 System Information](System%20Info%20-%20Windows01.png)
+
+### 2. Device Manager Warning
+
+Identified a warning associated with Base System Device during the initial workstation inspection.
+
+![Windows01 Base System Device](Base%20System%20Dev.%20-%20Windows01.png)
+
+### 3. Device Driver Error — Code 28
+
+Inspected the device properties and confirmed that Windows reported missing drivers (Code 28). The issue remains unresolved and is documented for further troubleshooting.
+
+![Windows01 Code 28](Device%20Mgr%20-%20Code%2028%20-%20Windows01.png)
+
 **Initial deployment completed. Further configuration and troubleshooting remain in progress.**
