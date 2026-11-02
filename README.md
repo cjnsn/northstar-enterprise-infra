@@ -83,7 +83,22 @@ Technologies will be added as the project develops. The environment is expected 
 - [ ] Implement infrastructure automation
 - [ ] Configure monitoring and logging
 - [ ] Implement and test backup and recovery procedures
-  
+
+  ### Windows01 — Windows 11 Pro Workstation (In Progress)
+
+**Completed:**
+- [x] Deployed Windows 11 Pro in VirtualBox
+- [x] Configured Windows01 hostname
+- [x] Created northstaradmin local account
+- [x] Verified system information and virtual hardware
+- [x] Identified Base System Device driver issue (Code 28)
+- [x] Documented deployment and troubleshooting evidence
+
+**In Progress:**
+- [ ] Investigate and resolve Code 28 driver issue
+- [ ] Verify Windows01 network connectivity
+- [ ] Practice local user and group administration
+- [ ] Configure and test Windows security settings
 
 
 ## Technical Documentation
@@ -91,3 +106,4 @@ Technologies will be added as the project develops. The environment is expected 
 The following documents describe the implementation, troubleshooting, and validation of the NorthStar Solutions infrastructure.
 
 - [Linux01 — Rocky Linux Server Deployment and Secure Remote Administration](docs/linux01-deployment.md)
+- [Windows01 — Windows 11 Pro Workstation Deployment and Initial Troubleshooting](windows/Windows01/README.md)
