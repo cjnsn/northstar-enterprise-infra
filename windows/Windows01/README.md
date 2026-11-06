@@ -53,21 +53,29 @@ Deploy a Windows 11 Pro virtual workstation, configure a local administrator acc
 
 **Observed issue:** Device Manager displayed a yellow warning triangle beside Base System Device.
 
-**Diagnostic steps:**
-1. Opened Device Manager.
-2. Located Base System Device.
-3. Opened the device's Properties window.
-4. Reviewed the Device status message.
+**Reported error:** Code 28 — The drivers for this device are not installed.
 
-**Reported error:** Code 28 — The drivers for this device are not installed. Windows reported that no compatible drivers were available.
+**Investigation:**
+1. Opened Device Manager and examined Base System Device properties.
+2. Reviewed the device status and confirmed Code 28.
+3. Examined the hardware ID: `PCI\VEN_80EE&DEV_CAFE`.
+4. Identified the vendor ID as Oracle VirtualBox and investigated VirtualBox Guest Additions as a potential solution.
 
-**Current status:** Unresolved.
+**Resolution:**
+1. Mounted the Oracle VirtualBox Guest Additions installation image.
+2. Launched the Windows Guest Additions installer.
+3. Installed Guest Additions 7.2.4 using the default installation options.
+4. Restarted Windows01 to allow the drivers to load.
 
-**Planned next step:** Identify the device using its hardware IDs and investigate an appropriate driver or VirtualBox configuration change.
+**Verification:** Reopened Device Manager after restarting Windows01. Base System Device was no longer listed with a warning, and no yellow warning triangles were visible.
+
+
+**Final status:** Resolved.
+
+**Lesson learned:** Hardware IDs can help identify devices with missing drivers. Using drivers from the appropriate official vendor provides a more reliable troubleshooting approach than installing unverified drivers.
 
 ## Outstanding Work
 
-- Investigate and resolve the Code 28 driver warning.
 - Verify Windows01 network configuration and connectivity.
 - Practice local user and group administration.
 - Configure and test Windows security settings.
@@ -82,9 +90,9 @@ Deploy a Windows 11 Pro virtual workstation, configure a local administrator acc
 - Local account creation
 - Windows System Information (`msinfo32`)
 - Device Manager diagnostics
+- Hardware identification using PCI hardware IDs
+- Windows driver installation and verification
 - Basic troubleshooting documentation
-
-## Project Status
 
 ## Deployment and Troubleshooting Evidence
 
@@ -105,5 +113,15 @@ Identified a warning associated with Base System Device during the initial works
 Inspected the device properties and confirmed that Windows reported missing drivers (Code 28). The issue remains unresolved and is documented for further troubleshooting.
 
 ![Windows01 Code 28](Device%20Mgr%20-%20Code%2028%20-%20Windows01.png)
+
+### 4. Device Driver Resolution — Code 28
+
+Installed Oracle VirtualBox Guest Additions 7.2.4 to address the missing driver associated with Base System Device.
+
+After restarting Windows01, reopened Device Manager and verified that Base System Device was no longer listed with a warning and no yellow warning triangles were visible.
+
+**Result:** Code 28 resolved.
+
+![Device Manager showing Code 28 resolved](Dev%20Mgr%20Code%2028%20Resolved.png)
 
 **Initial deployment completed. Further configuration and troubleshooting remain in progress.**
