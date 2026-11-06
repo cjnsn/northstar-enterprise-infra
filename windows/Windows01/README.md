@@ -110,7 +110,7 @@ Identified a warning associated with Base System Device during the initial works
 
 ### 3. Device Driver Error — Code 28
 
-Inspected the device properties and confirmed that Windows reported missing drivers (Code 28). The issue remains unresolved and is documented for further troubleshooting.
+Inspected the device properties and confirmed that Windows reported missing drivers (Code 28). Captured the original error as evidence before investigating and resolving the issue.
 
 ![Windows01 Code 28](Device%20Mgr%20-%20Code%2028%20-%20Windows01.png)
 
